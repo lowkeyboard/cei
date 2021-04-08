@@ -134,6 +134,6 @@ const styles = StyleSheet.create({
 });
 
 //https://wix.github.io/react-native-navigation/docs/functionalComponents/
-/*     const apikey = "&apikey=ec1ede79";
+/*     const apikey = "&apikey=YOURKEY";
     const url = "http://www.omdbapi.com/?s="; 
    */
