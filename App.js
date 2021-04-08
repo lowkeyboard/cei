@@ -5,11 +5,7 @@ import BottomNav from "./BottomNav";
 
 export default class App extends React.Component {
   render() {
-    return (
-      <BottomNav style={styles.backgroundColor}>
-        <SafeAreaView></SafeAreaView>
-      </BottomNav>
-    );
+    return <BottomNav style={styles.backgroundColor}></BottomNav>;
   }
 }
 
