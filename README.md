@@ -1,5 +1,5 @@
 # cei
-react-native mobile app
+:pushpin:	 react-native mobile app
 
 -> Search through API database, using react-native and nativebase for theming.
 
