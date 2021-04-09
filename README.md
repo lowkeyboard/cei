@@ -5,4 +5,4 @@ react-native mobile app
 
 -> Demo (08.04.2021) 
 
-![Alt Text](https://imgur.com/p2jMGeW)
+![Alt Text](https://media.giphy.com/media/dpYDk5d6mvE3sHmyC6/giphy.gif)
