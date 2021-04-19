@@ -25,6 +25,7 @@ if (firebase.apps.length === 0) {
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
+import LoginScreen from './components/auth/Login';
 import LandingScreen from './components/auth/Landing';
 import RegisterScreen from './components/auth/Register';
 import MainScreen from './components/Main';
@@ -75,6 +76,7 @@ export class App extends Component {
               options={{headerShown: false}}
             />
             <Stack.Screen name="Register" component={RegisterScreen} />
+            <Stack.Screen name="Login" component={LoginScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       );

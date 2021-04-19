@@ -1,29 +1,29 @@
-import React, { Component } from "react";
-import { View, Button, TextInput } from "react-native";
+import React, {Component} from 'react';
+import {View, Button, TextInput} from 'react-native';
 
-import * as firebase from "firebase";
+import * as firebase from 'firebase';
 
 class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      email: "",
-      password: "",
+      email: '',
+      password: '',
     };
 
-    this.onSignUp = this.onSignUp.bind(this);
+    this.onSignIn = this.onSignIn.bind(this);
   }
 
   onSignIn() {
-    const { email, password, name } = this.state;
+    const {email, password, name} = this.state;
     firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
-      .then((result) => {
+      .then(result => {
         console.log(result);
       })
-      .catch((error) => {
+      .catch(error => {
         console.log(error);
       });
   }
@@ -33,15 +33,15 @@ class Login extends Component {
       <View>
         <TextInput
           placeholder="email"
-          onChangeText={(email) => this.setState({ email })}
+          onChangeText={email => this.setState({email})}
         />
         <TextInput
           placeholder="password"
           secureTextEntry={true}
-          onChangeText={(password) => this.setState({ password })}
+          onChangeText={password => this.setState({password})}
         />
 
-        <Button onPress={() => this.onSign()} title="Sign in" />
+        <Button onPress={() => this.onSignIn()} title="Sign in" />
       </View>
     );
   }

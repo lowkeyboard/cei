@@ -5,12 +5,12 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {fetchUser} from '../redux/actions/index';
 
-import {createBottomNavigator} from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import FeedScreen from './main/Feed';
 import ProfileScreen from './main/Profile';
 
-const Tab = createBottomNavigator();
+const Tab = createBottomTabNavigator();
 const EmptyScreen = () => {
   return null;
 };
@@ -20,13 +20,6 @@ export class Main extends Component {
     this.props.fetchUser();
   }
   render() {
-    const {currentUser} = this.props;
-
-    console.log();
-    if (currentUser == undefined) {
-      return <View></View>;
-    }
-
     return (
       <Tab.Navigator initialRouteName="Feed">
         <Tab.Screen name="Feed" component={FeedScreen} />
